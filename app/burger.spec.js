@@ -1,7 +1,7 @@
 import test from 'ava';
 
 test.beforeEach(t => {
-  t.context.food = 'burger';
+  t.context = { food: 'burger' };
 });
 
 test.test('food is burger', t => {

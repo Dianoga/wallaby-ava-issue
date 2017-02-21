@@ -22,6 +22,7 @@ module.exports = function (wallaby) {
 
     setup: function () {
       require('babel-polyfill');
+      require(`${wallaby.localProjectDir}/../strongman/strongman-client/src/test/ava.helpers`);
     },
 
     debug: true
